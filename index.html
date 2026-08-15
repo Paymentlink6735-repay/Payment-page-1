@@ -36,7 +36,7 @@
             <div class="bg-gray-50 rounded-2xl p-4 border border-gray-200 space-y-2">
                 <div class="flex justify-between text-sm">
                     <span class="text-gray-500 font-medium">Customer Name:</span>
-                    <span class="text-gray-900 font-bold text-right">CUSTOMAR 01</span>
+                    <span class="text-gray-900 font-bold text-right">SANJEEV HAJONG</span>
                 </div>
                 <div class="flex justify-between text-sm border-t border-gray-200 pt-2">
                     <span class="text-gray-500 font-medium">Loan Name:</span>
@@ -46,7 +46,7 @@
 
             <div class="space-y-1">
                 <span class="text-gray-600 text-sm font-semibold block">Amount</span>
-                <span class="text-gray-900 font-extrabold text-2xl">₹ 3500</span>
+                <span class="text-gray-900 font-extrabold text-2xl">₹ 3000</span>
             </div>
 
             <div class="space-y-1">
@@ -132,9 +132,11 @@
 
         // UTR Submit function (Triggers custom popup)
         function submitUTR() {
+            // Modal show
             const modal = document.getElementById('customModal');
             modal.classList.remove('hidden');
 
+            // Button status update
             const btn = document.getElementById('submitBtn');
             btn.innerText = "Submitted";
             btn.disabled = true;
