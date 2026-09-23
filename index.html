@@ -1,1 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Objection Certificate - Patankar Sameer Moreshwar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
 
+        .certificate-container {
+            background-color: #ffffff;
+            width: 800px;
+            padding: 50px;
+            border: 10px solid #1a365d;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #1a365d;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #1a365d;
+            margin: 0;
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            color: #555;
+            margin: 5px 0 0 0;
+            font-size: 14px;
+        }
+
+        .doc-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title h2 {
+            color: #1a365d;
+            font-size: 20px;
+            text-decoration: underline;
+            margin: 0;
+        }
+
+        .content {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #2d3748;
+            margin-bottom: 30px;
+        }
+
+        .details-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .details-table th, .details-table td {
+            border: 1px solid #cbd5e0;
+            padding: 10px 15px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .details-table th {
+            background-color: #edf2f7;
+            color: #1a365d;
+            width: 35%;
+        }
+
+        .status-badge {
+            background-color: #38a169;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .signature-box {
+            text-align: center;
+            width: 200px;
+        }
+
+        .signature-line {
+            border-top: 1px solid #333;
+            margin-top: 50px;
+            padding-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #1a365d;
+        }
+
+        .print-btn {
+            display: block;
+            width: 150px;
+            margin: 20px auto 0 auto;
+            padding: 10px;
+            background-color: #1a365d;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .certificate-container {
+                box-shadow: none;
+                border: 5px solid #1a365d;
+            }
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="certificate-container">
+            <div class="header">
+                <h1>Financial Authority Limited</h1>
+                <p>123 Banking Street, Financial District, City - 400001</p>
+            </div>
+
+            <div class="doc-details">
+                <div><strong>Ref No:</strong> NOC/2026/FIN-8942</div>
+                <div><strong>Date:</strong> September 23, 2026</div>
+            </div>
+
+            <div class="title">
+                <h2>NO OBJECTION CERTIFICATE</h2>
+            </div>
+
+            <div class="content">
+                <p><strong>TO WHOM IT MAY CONCERN</strong></p>
+                <p>This is to certify that the borrower detailed below has successfully repaid and fully settled all principal amounts, interest, and related charges applicable to all loans registered under their name with our institution.</p>
+
+                <table class="details-table">
+                    <tr>
+                        <th>Customer Name</th>
+                        <td><strong>PATANKAR SAMEER MORESHWAR</strong></td>
+                    </tr>
+                    <tr>
+                        <th>Loan Facility</th>
+                        <td>All Loan Accounts</td>
+                    </tr>
+                    <tr>
+                        <th>Account Status</th>
+                        <td><span class="status-badge">FULLY CLOSED</span></td>
+                    </tr>
+                    <tr>
+                        <th>Outstanding Balance</th>
+                        <td>₹0.00 (Nil)</td>
+                    </tr>
+                    <tr>
+                        <th>NOC Clearance</th>
+                        <td>All Loan Clear</td>
+                    </tr>
+                </table>
+
+                <p>As of today, there are no pending liabilities or dues outstanding against the customer. We have no objection to the closure of these accounts. Necessary updates have been submitted to the Credit Information Companies (Credit Bureaus) to reflect a 100% clean credit clearance record.</p>
+                <p>This certificate is issued upon customer request for official records and verification purposes.</p>
+            </div>
+
+            <div class="footer">
+                <div>
+                    <p style="font-size: 12px; color: #718096; margin: 0;">* This is a system-generated official document.</p>
+                </div>
+                <div class="signature-box">
+                    <div class="signature-line">Authorized Signatory</div>
+                    <p style="font-size: 12px; color: #555; margin: 3px 0 0 0;">Loan Operations Department</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="print-btn" onclick="window.print()">Print NOC</button>
+    </div>
+
+</body>
+</html>
